@@ -122,6 +122,8 @@ fn main() -> io::Result<()> {
     if !dir.is_dir() {
         panic!("{:?} -- invalid directory", dir.display());
     }
+    let dir = fs::canonicalize(dir)?;
+    let dir = Path::new(dir.as_os_str());
     if matches.is_present("funny") {
         funny(&dir)?;
     }

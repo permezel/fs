@@ -21,7 +21,7 @@ fs --funny -d ~/Dropbox/funny
 fs -d ~/Dropbox/funny
 ```
 You can contrast that to OSX local:
-```
+```console
 mkdir /tmp/funny
 fs --funny -d /tmp/funny
 fs -d /tmp/funny
